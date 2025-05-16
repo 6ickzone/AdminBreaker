@@ -1,26 +1,14 @@
-Dork
 inurl:"/login.aspx" intitle:"Sign In" intext:"login form" ext:asp site:.org
-Dork
 inurl:"/gatekeeper/login" intitle:"User Login" intext:"admin" ext:aspx site:.id
-Dork
 inurl:"/signin" intitle:"Administrator Login" intext:"login form" ext:html site:.in
-Dork
 inurl:"/superadmin/" intitle:"Sign In" intext:"login form" ext:aspx site:.id
-Dork
 inurl:"/root/admin" intitle:"Login" intext:"admin" ext:php site:.org
-Dork
 inurl:"/adminv2/" intitle:"Admin Panel" intext:"Password" ext:php site:.net
-Dork
 inurl:"/adminarea/" intitle:"Dashboard" intext:"admin" ext:asp site:.in
-Dork
 inurl:"/login.aspx" intitle:"Admin Panel" intext:"Username" ext:php site:.com
-Dork
 inurl:"/site/login" intitle:"Control Panel" intext:"login form" ext:html site:.org
-Dork
 inurl:"/site/login" intitle:"Sign In" intext:"Username" ext:aspx site:.in
-Dork
 inurl:"/signin" intitle:"Administrator Login" intext:"admin" ext:html site:.ph
-Dork
 inurl:"/admin_console/" intitle:"Dashboard" intext:"Username" ext:aspx site:.org
 Dork
 inurl:"/signin" intitle:"Sign In" intext:"Password" ext:asp site:.ph
