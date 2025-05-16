@@ -128,3 +128,26 @@ inurl:cpanel site:.my
 inurl:cpanel site:.ph
 inurl:cpanel site:.sg
 inurl:cpanel site:.in
+intext:"admin" ext:aspx site:.ph
+intext:"login form" ext:php site:.in
+inurl:"/login/authenticate" intitle:"Administrator Login"
+inurl:"/client/login" intitle:"Sign In"
+intext:"login form" ext:aspx site:.id
+inurl:"/signin" intitle:"Admin Panel"
+intext:"login form" ext:aspx site:.com
+inurl:"/users/sign_in" intitle:"Admin Panel"
+intext:"login form" ext:asp site:.my
+inurl:"/administrator/" intitle:"Administrator Login"
+intext:"admin" ext:php site:.com
+inurl:"/adminv2/" intitle:"Login"
+intext:"login form" ext:aspx site:.id
+inurl:"/panel-admin/login.php" intitle:"Control Panel"
+intext:"admin" ext:aspx site:.in
+inurl:"/adminportal" intitle:"Login"
+intext:"Username" ext:html site:.org
+inurl:"/users/sign_in" intitle:"Control Panel"
+intext:"Password" ext:asp site:.com
+inurl:"/staff/login" intitle:"Sign In"
+intext:"Password" ext:html site:.com
+inurl:"/auth/login" intitle:"Sign In"
+intext:"login form" ext:asp site:.ph
