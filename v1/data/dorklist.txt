@@ -1,0 +1,130 @@
+intitle:"admin login" inurl:"/admin/"
+inurl:adminlogin.php
+intitle:"administrator login" inurl:login
+inurl:"/adminpanel/login"
+"admin login" inurl:signin
+inurl:"admin.php?login"
+intitle:"Backend Login"
+"Sign in as Admin" inurl:auth
+inurl:admin/login.cfm
+"Control Panel" inurl:admin
+intitle:"Login to Admin" inurl:/manage/
+inurl:/adminconsole/login.php
+"Login Administrator" inurl:signin.php
+inurl:"admin_login"
+"Admin Sign-in" inurl:login/
+inurl:"signin/admin"
+"Enter Admin Panel" inurl:adminaccess/
+"Login Area" inurl:admin.php
+inurl:admin/securelogin.php
+"Admin Gateway" inurl:auth
+inurl:logon/admin
+inurl:admin_session.php
+intitle:"System Admin Login"
+inurl:management/login.php
+inurl:"/staff/login"
+inurl:adminSignin.aspx
+inurl:adminlog.aspx
+"Login Securely" inurl:adminaccess.php
+inurl:authadmin/
+"admin login page" inurl:panel/login
+inurl:access-admin/
+inurl:adminlogin.cfm
+inurl:adminentry.php
+inurl:staffadminlogin/
+inurl:admin-authenticate.jsp
+inurl:adminsignin.html
+inurl:panel/login.php
+inurl:systemadmin/login
+inurl:"secureadminlogin"
+intitle:"Login - Administrator"
+"admin only" inurl:auth/login
+inurl:root/adminlogin
+inurl:backend_admin/login
+inurl:authadminlogin
+inurl:superadmin/login
+inurl:main/adminlogin
+inurl:admin_authenticate.php
+inurl:admin_access.jsp
+inurl:admin/securitylogin
+inurl:manage_admin/login
+intitle:"admin panel" inurl:"/admin/"
+inurl:admin/login.asp
+inurl:"adminpanel.php"
+inurl:adminarea/
+inurl:admincp/
+inurl:adminconsole/
+inurl:"cms/admin"
+inurl:"admin/index.jsp"
+intitle:"Admin Control Panel" inurl:"/admin/"
+inurl:adminsite/login.php
+"admin dashboard" inurl:/cpanel
+"admin access" inurl:backend/
+inurl:/adminpanel "Control Panel"
+inurl:adminportal/
+"Site Admin" inurl:admin/
+inurl:"adminarea/login.php"
+inurl:admin.asp intitle:"login"
+inurl:"adminhome.php"
+inurl:"adminconsole.aspx"
+"welcome admin" inurl:admin.jsp
+inurl:moderatorpanel/
+inurl:administrator/login.php
+"Administrator Panel" inurl:admin/index.asp
+inurl:modcp/ intitle:"Moderator Control Panel"
+inurl:superuser/ intitle:"admin login"
+intitle:"site administrator" inurl:admin
+inurl:secure/admin.php
+inurl:adminaccess.aspx
+"CMS Admin" inurl:adminpanel/
+inurl:adminmanage/
+inurl:login.php intitle:"admin login"
+inurl:"user=admin" intext:"Welcome" -github -stackoverflow
+inurl:auth.php intitle:"restricted access"
+inurl:"/admin/" intext:"Login as admin"
+inurl:adminlogin.jsp intext:"authentication failed"
+inurl:signin.php intitle:"admin panel"
+intitle:"Login Page" inurl:"/admin/" ext:php
+inurl:"verify.php" "admin access only"
+inurl:"/dashboard.php" "Welcome Admin"
+"admin" + "powered by php" inurl:login
+"login failed" "admin" inurl:index.php
+inurl:"/auth" intitle:"Restricted Area"
+"Access Denied" "admin login" inurl:admin
+intitle:"admin authentication" inurl:"/adminpanel"
+"admin portal" inurl:access.php
+"login to manage" inurl:admin.php
+inurl:cpanel/ "Username: admin"
+"access for admin only" inurl:securelogin.php
+"admin login" inurl:"verify"
+"admin signin" inurl:signin admin
+inurl:admin/login.php site:.id
+inurl:admin/login.php site:.my
+inurl:admin/login.php site:.sg
+inurl:admin/login.php site:.ph
+inurl:admin/login.php site:.in
+intitle:"admin panel" inurl:"/admin/" site:.id
+intitle:"admin panel" inurl:"/admin/" site:.my
+intitle:"admin panel" inurl:"/admin/" site:.ph
+intitle:"admin panel" inurl:"/admin/" site:.sg
+intitle:"admin panel" inurl:"/admin/" site:.in
+inurl:"admin_login" site:.id
+inurl:"admin_login" site:.my
+inurl:"admin_login" site:.sg
+inurl:"admin_login" site:.ph
+inurl:"admin_login" site:.in
+inurl:admin area site:.id
+inurl:admin area site:.my
+inurl:admin area site:.sg
+inurl:admin area site:.ph
+inurl:admin area site:.in
+inurl:admin.php?login site:.id
+inurl:admin.php?login site:.my
+inurl:admin.php?login site:.ph
+inurl:admin.php?login site:.sg
+inurl:admin.php?login site:.in
+inurl:cpanel site:.id
+inurl:cpanel site:.my
+inurl:cpanel site:.ph
+inurl:cpanel site:.sg
+inurl:cpanel site:.in
