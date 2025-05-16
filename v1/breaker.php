@@ -10,8 +10,8 @@
 // ---------------------
 // CONFIGURATIONS
 // ---------------------
-const DATA_FOLDER   = __DIR__ . '/v1/data/';
-const OUTPUT_FOLDER = __DIR__ . '/v1/output/';
+const DATA_FOLDER   = __DIR__ . '/data/';
+const OUTPUT_FOLDER = __DIR__ . '/output/';
 
 // ANSI Colors
 const C_RESET  = "\033[0m";
