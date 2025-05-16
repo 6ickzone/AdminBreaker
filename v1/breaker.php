@@ -3,7 +3,7 @@
 <?php
 /**
  * Admin Breaker v4.1 Ultimate MixHunter (Refactored)
- * By 0x6ick x NyxCode (2025)
+ * By nyx6st (2025)
  * PHP7+ CLI
  */
 
