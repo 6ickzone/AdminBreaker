@@ -3,7 +3,7 @@
 <?php
 /**
  * Admin Breaker v4.1 Ultimate MixHunter (Refactored)
- * By 0x6ick x NyxCode (2025)
+ * By Nyx6st(2025)
  * PHP7+ CLI
  */
 
@@ -92,8 +92,8 @@ main($argv);
 // ---------------------
 function banner() {
     echo str_repeat('=', 50) . "\n";
-    echo C_BLUE . "  Admin Breaker v4.1 Ultimate MixHunter" . C_RESET . "\n";
-    echo C_BLUE . "  By 0x6ick x NyxCode (2025)" . C_RESET . "\n";
+    echo C_BLUE . "  Admin Breaker" . C_RESET . "\n";
+    echo C_BLUE . "  By Nyx6st (2025)" . C_RESET . "\n";
     echo str_repeat('=', 50) . "\n\n";
 }
 
