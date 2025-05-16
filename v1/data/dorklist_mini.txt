@@ -1,1 +1,39 @@
-
+inurl:/index.aspx/login site:.id
+inurl:/site/login.php
+inurl:/client/login.php
+inurl:/guest/login.php
+inurl:/administrator/login.php
+inurl:/system/login.php site :.id
+inurl:/student/login.php site:.in
+inurl:admin/login.php
+inurl:administrator/ site:.in
+intitle:Admin Panel site:.in
+inurl:"/student/login.php" site:.in
+inurl:"/admin/login.php" site:.in
+inurl:"/administrator/" site:.in
+intitle:"Admin Panel" site:.in
+inurl:"adminpanel" site:.in
+inurl:"/adminarea/" site:.in
+inurl:"/site/login.php"
+inurl:"/client/login.php"
+inurl:"/guest/login.php"
+inurl:"/admin/login.php"
+inurl:"/administrator/login.php"
+inurl:"/panel/login.php"
+inurl:"/adminarea/login.php"
+inurl:"/user/login" intitle:"login"
+intitle:"Login Admin" inurl:"login"
+intitle:"Admin Login" inurl:"admin"
+intitle:"Dashboard Login" inurl:"login"
+inurl:"/site/login.php"
+inurl:"/client/login.php"
+inurl:"/guest/login.php"
+inurl:"/admin/login.php"
+inurl:"/administrator/login.php"
+inurl:"/panel/login.php"
+inurl:"/adminarea/login.php"
+inurl:"/user/login" intitle:"login"
+intitle:"Login Admin" inurl:"login"
+intitle:"Admin Login" inurl:"admin"
+intitle:"Dashboard Login" inurl:"login"
+inurl:"cpanel" intitle:"login"
